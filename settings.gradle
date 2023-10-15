@@ -1,0 +1,4 @@
+rootProject.name = 'CleverGradleTask'
+include 'core'
+include 'api'
+
