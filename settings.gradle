@@ -1,4 +1,5 @@
 rootProject.name = 'CleverGradleTask'
 include 'core'
 include 'api'
+include 'basic-task'
 
