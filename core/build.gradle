@@ -6,10 +6,11 @@ group = 'by.clever'
 version = '1.0-SNAPSHOT'
 
 repositories {
-    mavenCentral()
+   mavenCentral()
 }
 
 dependencies {
+    implementation project(":basic-task")
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }

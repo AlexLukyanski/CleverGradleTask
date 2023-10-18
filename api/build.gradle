@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'my-plugin'
 }
 
 group = 'by.clever'
@@ -10,8 +11,13 @@ repositories {
 }
 
 dependencies {
+    implementation project(":core")
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+jar {
+    manifest { attributes 'Main-Class': 'by.clever.gradle.app.App' }
 }
 
 test {
